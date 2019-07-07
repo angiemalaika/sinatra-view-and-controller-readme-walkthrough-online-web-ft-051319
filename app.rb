@@ -2,11 +2,11 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
   
-    get "/" do
-  @user = "Ian"
+  get "/" do
+   @user = "Ian"
  
-  erb :index # @user will be defined as 'Ian' in the view
-end
+   erb :index # @user will be defined as 'Ian' in the view
+  end
     
     get '/reverse' do
      erb :reverse
